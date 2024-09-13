@@ -1,0 +1,17 @@
+.navbar {
+	width: 100vw;
+	min-height: 50px;
+	position: sticky;
+	display: flex;
+	align-items: center;
+	padding-inline: 10px;
+	top: 0;
+	justify-content: center;
+	background-color: rgb(57, 204, 204);
+	gap: 20px;
+}
+
+.navbar__links {
+	text-decoration: none;
+	color: black;
+}

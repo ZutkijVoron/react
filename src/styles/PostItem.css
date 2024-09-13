@@ -1,0 +1,47 @@
+.post {
+	text-wrap: balance;
+	padding: 15px;
+	border: 2px solid teal;
+	margin-block: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 500ms ease-in;
+}
+
+.post__controls {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.post-enter {
+	transform: translateX(-150vw);
+}
+
+.post-enter-active {
+	transform: translateX(0vw);
+}
+
+.post-exit {
+	transform: translateX(0vw);
+}
+
+.post-exit-active {
+	transform: translateX(-150vw);
+}
+
+.page__wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.page__wrapper__current {
+	border: 4px solid teal;
+}
+
+
+
+

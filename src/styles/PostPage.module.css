@@ -1,0 +1,15 @@
+.post {
+}
+
+.post__title {
+}
+
+.post__comments {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.post__comments__item {
+}
