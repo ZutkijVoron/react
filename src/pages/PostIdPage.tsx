@@ -7,7 +7,7 @@ import classes from '../styles/PostPage.module.css'
 
 const PostIdPage = () => {
 	const params = useParams()
-	const [post, setPost] = useState({})
+	const [post, setPost] = useState({ id: -1, title: 'loading' })
 	const [comments, setComments] = useState([])
 	const [fetchPostById, isLoading, error] = useFetching(async id => {
 		const response = await PostService.getById(id)
@@ -38,7 +38,7 @@ const PostIdPage = () => {
 				<UILoader />
 			) : (
 				<div className={classes.post__comments}>
-					{comments.map(e => (
+					{comments.map((e: { id: number; email: string; body: string }) => (
 						<div key={e.id} className={classes.post__comments__item}>
 							<div className={classes.post__comments__item__email}>
 								{e.email}

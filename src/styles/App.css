@@ -4,13 +4,8 @@
 	box-sizing: border-box;
 }
 
-
 #root {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-.App {
-	width: 80vw;
 }
